@@ -24,7 +24,7 @@ public class MainApp {
 		new LogRecord();
 
 		deviceConfig = DeviceConfig.getInstance();
-		myDevice = OpenMyDevice.open(deviceConfig);
+		myDevice = OpenMyDevice.open(deviceConfig, myDevice);
 
 		// verifica se o rádio está conectado e
 		// tenta reconectar se rádio não foi encontrado.

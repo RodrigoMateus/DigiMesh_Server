@@ -18,7 +18,7 @@ public class RadioMonitor implements Runnable {
 				System.out.println("TimeoutException in Local Radio connection. Check connection.");
 			} catch (Exception e1) {
 				System.out.println("Local Radio connection has been lost. Check connection.");
-				MainApp.myDevice = OpenMyDevice.open(MainApp.deviceConfig);
+				MainApp.myDevice = OpenMyDevice.open(MainApp.deviceConfig, MainApp.myDevice);
 			}
 
 			try {
